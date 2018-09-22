@@ -52,7 +52,7 @@ class App extends Component {
     return (
       <div className="App">
         <Add updateState={data => this.setState({ creatures: data })} />
-
+        <h2>Haunted House</h2>
         <Creatures
           creatures={this.state.creatures}
           updateState={data => this.setState({ creatures: data })}

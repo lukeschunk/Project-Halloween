@@ -65,6 +65,7 @@ class UpdateForm extends Component {
           value={this.state.name}
           onChange={event => this.handleChange(event, "name")}
         />
+
         <input
           type="text"
           placeholder="Image URL"
@@ -79,7 +80,9 @@ class UpdateForm extends Component {
           value={this.state.scary.level}
           onChange={event => this.handleScaryLevel(event)}
         />
-        <button onClick={() => this.handleClick(this.state.id)}>Edit</button>
+        <button onClick={() => this.handleClick(this.state.id)}>
+          Update Creature
+        </button>
       </div>
     );
   }

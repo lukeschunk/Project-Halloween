@@ -23,11 +23,11 @@
   /* justify-content: center; */
 }
 
-/* .edit-block {
-  width: 100vw;
+.edit-block {
+  width: 80%;
   display: flex;
   flex-direction: column;
-} */
+}
 
 img {
   width: 400px;

@@ -81,7 +81,7 @@ class AddForm extends Component {
           value={this.state.scary.level}
           onChange={event => this.handleScaryLevel(event)}
         />
-        <button onClick={this.handleClick}> Add </button>
+        <button onClick={this.handleClick}> Add Creature </button>
       </div>
     );
   }

@@ -60,7 +60,7 @@ class AddForm extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="creature-add-box">
         <input
           type="text"
           placeholder="Creature Name"
@@ -73,15 +73,22 @@ class AddForm extends Component {
           value={this.state.image_url}
           onChange={event => this.handleChange(event, "image_url")}
         />
-        <input
-          type="number"
-          name="Scary"
-          placeholder="1 to 10"
-          id=""
-          value={this.state.scary.level}
-          onChange={event => this.handleScaryLevel(event)}
-        />
-        <button onClick={this.handleClick}> Add Creature </button>
+        <div className="sliderContainer">
+          <input
+            type="number"
+            name="Scary"
+            placeholder="1 to 10"
+            min="1"
+            max="10"
+            className="slider"
+            id=""
+            value={this.state.scary.level}
+            onChange={event => this.handleScaryLevel(event)}
+          />
+        </div>
+        <button onClick={this.handleClick} className="btn btn-primary">
+          Add Creature
+        </button>
       </div>
     );
   }

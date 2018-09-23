@@ -72,15 +72,21 @@ class UpdateForm extends Component {
           value={this.state.image_url}
           onChange={event => this.handleChange(event, "image_url")}
         />
-        <input
-          type="number"
-          name="Scary"
-          placeholder="1 to 10"
-          id=""
-          value={this.state.scary.level}
-          onChange={event => this.handleScaryLevel(event)}
-        />
-        <button onClick={() => this.handleClick(this.state.id)}>
+        <div className="sliderContainer">
+          <input
+            type="number"
+            name="Scary"
+            className="slider"
+            placeholder="1 to 10"
+            id=""
+            value={this.state.scary.level}
+            onChange={event => this.handleScaryLevel(event)}
+          />
+        </div>
+        <button
+          className="btn btn-primary"
+          onClick={() => this.handleClick(this.state.id)}
+        >
           Update Creature
         </button>
       </div>
